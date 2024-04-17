@@ -10,11 +10,7 @@ import gym
 import gym_cartpole_world
 
 from models.dqn_gen import DoubleDQNAgent
-from pyvirtualdisplay import Display
 
-# Start a virtual display
-display = Display(visible=0, size=(1400, 900))
-display.start()
 
 SCREEN_X = 64
 SCREEN_Y = 64
@@ -118,4 +114,3 @@ while trial < MAX_TRIALS:
 
 env.close()
 env.env.close()
-display.stop()
